@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(201, 188, 188);
+}
+
+/* p section start*/
+p:first-letter{
+    color: rgb(230, 24, 24);
+}
+p:first-line{
+    color: rgb(12, 49, 236);
+}
+/* p section end*/
+
+/* table section */
+.justtable{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+.justtable tr:nth-child(2n+1){
+    background-color: rgb(47, 231, 231);
+}
+
+.justtable tr:nth-child(2n){
+    background-color: steelblue;
+}
+/* table section */
+
+/* h1 section */
+.h1div h1{
+    display: inline;
+    background-color: deeppink;
+    transition: all 0.7s linear;
+}
+.h1div h1:hover{
+    content: "";
+    color: blue;
+    transition: all 0.8s linear;
+}
+/* h1 section */
+
+/* hover linear practice section */
+.container{
+    background-color: rgb(96, 150, 245);
+    background: radial-gradient(red, green, aqua, blue);
+    height: 200px;
+}
+.ContainerP{
+    background-color: red;
+    border-radius: 3px;
+    margin: 0px 5px;
+    display: inline-flex;
+}
+.box{
+    background-color: rgba(173, 226, 27, 0.81);
+    height: 100px;
+    width: 100px;
+    transform: translateX(0vw) ;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 2px 3px 10px black;
+}
+.container:hover .box{
+    transform: translateX(91vw) ;
+}
+/* hover linear practice section */
+
+/* game section */
+.game-container{
+    border-collapse: collapse;
+    width: 150px;
+    height: 150px;
+    margin: 0px auto 0px auto;
+}
+.game-container tr td img{
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.game-container tr td img:hover{
+    transition: all 0.4s linear;
+    opacity: 1;
+}
+/* game section */
+
+/* button section */
+button{
+    background-color: blue;
+    color: white;
+    padding: 4px 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.0s linear;
+}
+button:hover{
+    transition: all 0.3s linear;
+    color: rgb(64, 237, 75);
+    outline: 2px solid yellow;
+    box-shadow: 2px 2px 10px black;
+}
+/* button section */
